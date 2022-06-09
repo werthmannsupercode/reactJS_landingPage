@@ -1,38 +1,142 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+header {
+  background-color: rgb(56, 126, 35);
   text-align: center;
+  padding: 10vh 10vh 3vh 10vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headlineSmallHeader {
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.headlineHeader {
   color: white;
+  font-size: 8rem;
+  padding: 3vh 1vw 6vh 1vw;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  margin-bottom: 3vh;
 }
 
-.App-link {
-  color: #61dafb;
+.pHeader {
+  margin: 0 25vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zahlenBlockHeader {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 -10vh;
+}
+
+.numberHeader {
+  color: white;
+  font-size: 8rem;
+  padding-top: 3vh;
+}
+
+.descriptionNumber {
+  font-weight: bold;
+}
+
+header div div {
+  margin-top: 5vh;
+  width: 360px;
+}
+
+header div div:nth-of-type(1),
+header div div:nth-of-type(2),
+header div div:nth-of-type(3) {
+  border-right: 1px solid white;
+}
+
+main {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.headlineSmallMain {
+  font-size: 2.4rem;
+  color: rgb(56, 126, 35);
+  padding-top: 10vh;
+}
+
+.headlineMain {
+  font-size: 5rem;
+  padding: 1vh 10vw;
+}
+
+main>div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wrapBlockMain {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2vh;
+}
+
+.icon {
+  width: 40px;
+  margin: 0 1vw 0 5vw;
+}
+
+.textBlockMain {
+  text-align: left;
+  margin-right: 12.5vw;
+}
+
+.headlineTextBlockMain {
+  font-size: 2rem;
+}
+
+footer {
+  background-color: gainsboro;
+  margin: 0 4vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 5vw;
+}
+
+.wrapBlockFooter {
+  width: 21vw;
+  background-color: white;
+  padding: 0 2vw;
+}
+
+.imgFooter {
+  width: 17vw;
+  height: 17vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.headlineBlue {
+  color: rgb(80, 146, 207);
+  font-size: 2rem;
+  padding: 2vh 1vw;
+}
+
+.wrapBlockFooter p {
+  padding: 2vh 1vw;
+}
+
+.price {
+  font-size: 2rem;
+  color: rgb(117, 250, 185);
+  padding: 0 0 4vh 1vw;
 }
